@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,82 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5a-j2-nwm">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <state key="normal" image="rec">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j4r-dm-jbJ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd3-zW-pme">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqe-mt-kYe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopRec:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cMW-6j-v9D"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="bqe-mt-kYe" secondAttribute="centerY" constant="-265" id="D1k-Kv-6oe"/>
+                            <constraint firstAttribute="centerX" secondItem="bqe-mt-kYe" secondAttribute="centerX" id="DZL-9U-K74"/>
+                            <constraint firstAttribute="centerY" secondItem="bqe-mt-kYe" secondAttribute="centerY" constant="-230" id="I8F-de-m5o"/>
+                            <constraint firstItem="Vd3-zW-pme" firstAttribute="top" secondItem="Z5a-j2-nwm" secondAttribute="bottom" constant="9" id="Mfn-tX-SmV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bqe-mt-kYe" secondAttribute="bottom" constant="20" id="WTX-Xf-Axi"/>
+                            <constraint firstAttribute="centerX" secondItem="Vd3-zW-pme" secondAttribute="centerX" id="dJX-2f-K8l"/>
+                            <constraint firstAttribute="centerY" secondItem="Z5a-j2-nwm" secondAttribute="centerY" id="hh4-u2-VKj"/>
+                            <constraint firstAttribute="centerX" secondItem="Z5a-j2-nwm" secondAttribute="centerX" id="zqV-IQ-gjo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vd3-zW-pme"/>
+                                <exclude reference="bqe-mt-kYe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Mfn-tX-SmV"/>
+                                <exclude reference="dJX-2f-K8l"/>
+                                <exclude reference="D1k-Kv-6oe"/>
+                                <exclude reference="DZL-9U-K74"/>
+                                <exclude reference="I8F-de-m5o"/>
+                                <exclude reference="WTX-Xf-Axi"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Vd3-zW-pme"/>
+                                <include reference="bqe-mt-kYe"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Mfn-tX-SmV"/>
+                                <include reference="dJX-2f-K8l"/>
+                                <include reference="D1k-Kv-6oe"/>
+                                <include reference="DZL-9U-K74"/>
+                                <include reference="I8F-de-m5o"/>
+                                <include reference="WTX-Xf-Axi"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="recLabel" destination="Vd3-zW-pme" id="pQE-AO-i4w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="rec" width="100" height="100"/>
+        <image name="stop" width="100" height="100"/>
+    </resources>
 </document>

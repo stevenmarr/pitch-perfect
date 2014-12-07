@@ -20,6 +20,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBOutlet weak var recLabel: UILabel!
+    
+    
+    @IBAction func recordButton(sender: UIButton) {
+        // Add "Recording..." text
+        recLabel.hidden = false
+        
+        //TODO: Create New Recording
+    }
 
+    @IBAction func stopRec(sender: UIButton) {
+        recLabel.hidden = true
+        //TODO: Stop Recording
+    }
 }
 
