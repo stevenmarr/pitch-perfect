@@ -133,9 +133,6 @@
                                 <state key="normal" image="chipmunk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="41" y="239" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playChipmunk:" destination="3Jn-QF-ieR" eventType="touchUpInside" id="aw7-an-Hqa"/>
                                 </connections>
@@ -145,8 +142,8 @@
                                 <state key="normal" image="vader">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="232" y="239" width="155" height="100"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="252" y="239" width="115" height="100"/>
                                 </variation>
                                 <connections>
                                     <action selector="playVader:" destination="3Jn-QF-ieR" eventType="touchUpInside" id="RHl-eB-z0F"/>
@@ -158,7 +155,6 @@
                             <constraint firstItem="v7p-GY-l9p" firstAttribute="top" secondItem="l3z-Wt-ZGJ" secondAttribute="bottom" constant="50" id="9cC-gV-KES">
                                 <variation key="widthClass=compact" constant="25"/>
                             </constraint>
-                            <constraint firstItem="mdk-Tz-Y9C" firstAttribute="leading" secondItem="vNX-cb-7qy" secondAttribute="trailing" constant="91" id="D1e-VT-4ys"/>
                             <constraint firstItem="vNX-cb-7qy" firstAttribute="top" secondItem="v7p-GY-l9p" secondAttribute="bottom" constant="50" id="LDQ-0J-BYC"/>
                             <constraint firstItem="vNX-cb-7qy" firstAttribute="leading" secondItem="AF3-bO-vzO" secondAttribute="leadingMargin" constant="25" id="Qxs-u6-rec"/>
                             <constraint firstItem="v7p-GY-l9p" firstAttribute="leading" secondItem="AF3-bO-vzO" secondAttribute="leadingMargin" constant="50" id="aNC-mh-bHB">
@@ -166,7 +162,6 @@
                             </constraint>
                             <constraint firstItem="mdk-Tz-Y9C" firstAttribute="top" secondItem="NJl-ZQ-w62" secondAttribute="bottom" constant="50" id="ai3-yp-dyY"/>
                             <constraint firstAttribute="centerX" secondItem="fHk-Nb-iA6" secondAttribute="centerX" id="b0X-lE-D9Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mdk-Tz-Y9C" secondAttribute="trailing" constant="-3" id="bPC-hb-qyk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NJl-ZQ-w62" secondAttribute="trailing" constant="30" id="buL-EI-NYs">
                                 <variation key="widthClass=compact" constant="25"/>
                             </constraint>
@@ -174,6 +169,7 @@
                             <constraint firstItem="NJl-ZQ-w62" firstAttribute="top" secondItem="l3z-Wt-ZGJ" secondAttribute="bottom" constant="79" id="k4L-ZA-s8G">
                                 <variation key="widthClass=compact" constant="25"/>
                             </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="mdk-Tz-Y9C" secondAttribute="trailing" constant="17" id="lOf-fj-0li"/>
                             <constraint firstItem="4OV-43-ffZ" firstAttribute="top" secondItem="fHk-Nb-iA6" secondAttribute="bottom" constant="8" id="w50-yJ-cIY"/>
                         </constraints>
                         <variation key="default">
@@ -191,9 +187,8 @@
                                 <exclude reference="Qxs-u6-rec"/>
                                 <exclude reference="buL-EI-NYs"/>
                                 <exclude reference="k4L-ZA-s8G"/>
-                                <exclude reference="D1e-VT-4ys"/>
                                 <exclude reference="ai3-yp-dyY"/>
-                                <exclude reference="bPC-hb-qyk"/>
+                                <exclude reference="lOf-fj-0li"/>
                                 <exclude reference="b0X-lE-D9Z"/>
                                 <exclude reference="d5P-nh-VPw"/>
                                 <exclude reference="w50-yJ-cIY"/>
@@ -214,9 +209,8 @@
                                 <include reference="Qxs-u6-rec"/>
                                 <include reference="buL-EI-NYs"/>
                                 <include reference="k4L-ZA-s8G"/>
-                                <include reference="D1e-VT-4ys"/>
                                 <include reference="ai3-yp-dyY"/>
-                                <include reference="bPC-hb-qyk"/>
+                                <include reference="lOf-fj-0li"/>
                                 <include reference="b0X-lE-D9Z"/>
                                 <include reference="d5P-nh-VPw"/>
                                 <include reference="w50-yJ-cIY"/>
