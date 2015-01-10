@@ -79,6 +79,7 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func stopPlayback(sender: UIButton) {
         audioPlayer.stop()
+        audioEngine.stop()
     }
     /*
     // MARK: - Navigation
